@@ -3,15 +3,15 @@ Guards netplan-defined network connections: It checks for internet connectivity 
 
 # Install
 ```
-mkdir /opt/guard-network
-cd /opt/guard-network
-sudo git clone 
-chmod 700 guard-network.sh
+cd /opt
+sudo git clone https://github.com/gnothiseautonlw/guard-network.git
+sudo chmod 700 guard-network.sh
 ```
 
 # Usage
+Make a cronjob
 ```
-sudo crontab -e #Make a cronjob
+sudo crontab -e
 ```
 Add to the crontab file:
 ```
